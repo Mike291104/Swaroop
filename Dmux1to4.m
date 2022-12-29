@@ -1,0 +1,6 @@
+% Dmux1to4
+function [a,b,c,d]=Dmux1to4(in,s1,s2)
+[o1,o2]=Dmux1to2(in,s1);
+[a,b]=Dmux1to2(o1,s2)
+[c,d]=Dmux1to2(o2,s2)
+end
